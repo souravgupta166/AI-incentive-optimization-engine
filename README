@@ -1,237 +1,180 @@
-<!-- Project Title
+# 🚀 Reward Dependency Intelligence System
 
-Reward Dependency Intelligence System
-A Causal Approach to Incentive Optimization in Rewarded User Acquisition Platforms
+### AI-Powered Incentive Optimization for Rewarded User Acquisition Platforms
 
-Problem Statement
+## Executive Summary
 
-Rewarded user acquisition platforms rely on monetary incentives to drive user engagement and advertiser conversions.
+Rewarded user acquisition platforms invest millions in incentives to drive user engagement, retention, and advertiser conversions. However, not every user requires the same level of incentives to remain active.
 
-However, not all users respond to rewards in the same way.
+This project explores a critical business question:
 
-Some users remain engaged regardless of reward levels, while others participate solely because of incentives.
+> **How much incentive spend can be reduced without negatively impacting user retention and advertiser value?**
 
-Current reward structures often apply the same reward logic across large user groups, leading to:
+The Reward Dependency Intelligence System identifies users who are overly dependent on rewards, simulates reward reduction scenarios, and recommends optimized reward strategies that improve profitability while preserving engagement.
 
-Excessive reward spending
-Reduced profit margins
-Inflated retention metrics
-Difficulty identifying genuinely valuable users
-Lower advertiser ROI
+---
 
-The challenge is determining:
+## 🎯 Business Problem
 
-Which users can receive lower rewards without negatively impacting retention and engagement?
+Most rewarded platforms apply incentives using broad rules and static reward structures.
 
-Business Impact
+This often results in:
 
-For platforms such as Almedia, reward payouts represent a significant operational cost.
+* Excessive reward spending
+* Reduced profit margins
+* Inflated retention metrics
+* Poor visibility into true user value
+* Lower advertiser ROI
 
-Even small improvements in reward allocation can generate substantial savings.
+The challenge is determining which users genuinely need incentives and which users would remain engaged even with lower rewards.
 
-This system aims to:
+---
 
-Reduce Incentive Spend
+## 💡 Solution
 
-Identify users who can maintain engagement with lower reward levels.
+The Reward Dependency Intelligence System combines behavioral segmentation, dependency scoring, and reward optimization logic to estimate:
 
-Improve Profitability
+* User-level reward dependency
+* Retention impact of reward reductions
+* Potential savings opportunities
+* Optimal reward recommendations
 
-Decrease unnecessary reward payouts while preserving advertiser revenue.
+The system classifies users into actionable segments and recommends:
 
-Increase Advertiser ROI
+✅ KEEP Current Reward
 
-Prioritize genuinely engaged users rather than purely reward-driven users.
+📉 REDUCE Reward by 20%
 
-Support Smarter Experimentation
+📉 REDUCE Reward by 40%
 
-Provide a foundation for future uplift modelling and causal inference experiments.
+---
 
-Improve User Segmentation
+## 📊 Project Results
 
-Move beyond traditional retention metrics and classify users based on reward dependency behavior.
+### Dataset Overview
 
-Proposed Solution
+* **100,000 simulated users**
+* **17 business and behavioral features**
+* Multi-country rewarded user acquisition environment
+* Simulated retention and reward-reduction scenarios
 
-The Reward Dependency Intelligence System estimates how dependent individual users are on rewards and simulates the impact of reward reductions.
+---
 
-The system:
+### Key Findings
 
-Generates user-level dependency profiles
-Simulates reward reduction scenarios
-Predicts retention impact
-Calculates potential cost savings
-Recommends optimized reward amounts
+| Metric                 | Value      |
+| ---------------------- | ---------- |
+| Total Users Analysed   | 100,000    |
+| Current Reward Spend   | €1,114,378 |
+| Optimized Reward Spend | €957,818   |
+| Estimated Savings      | €156,561   |
+| Savings Percentage     | 14.05%     |
+| High Dependency Users  | 24,405     |
 
-Assumptions
+---
 
-Since production data is unavailable, the project uses a realistic synthetic dataset designed to mimic a rewarded user acquisition platform.
+### Optimization Recommendations
 
-Key assumptions include:
+| Recommendation | Users  |
+| -------------- | ------ |
+| REDUCE 40%     | 39,645 |
+| REDUCE 20%     | 35,132 |
+| KEEP           | 25,223 |
 
-User Segments
+---
 
-Users belong to one of three behavioral groups:
+## 🧠 Methodology
 
-Genuine Gamers
-Casual Users
-Reward Hunters
-Reward Dependency
-
-Higher dependency scores indicate stronger reliance on incentives.
-
-Reward Reduction Effects
-
-Users with lower dependency scores are less sensitive to reward reductions.
-
-Advertiser Economics
-
-Advertisers generate payouts proportional to user engagement and retention.
-
-Retention Behavior
-
-Retention decreases as rewards are reduced, with stronger effects among highly dependent users.
-
-Dataset
-
-Synthetic dataset containing:
-
-User Information
-User ID
-Country
-Device Type
-Acquisition Source
-Engagement Metrics
-Session Duration
-Offers Completed
-Retention (30-Day)
-Reward Metrics
-Current Reward Amount
-Reward Dependency Score
-Simulated Reward Reduction Levels
-Business Metrics
-Advertiser Payout
-User Revenue
-Profit Contribution
-Experimental Variables
-Retention After 20% Reward Reduction
-Retention After 40% Reward Reduction
-
-Dataset Size:
-
-100,000 users
-17 features
-
-Methodology
-Phase 1 — Behavioral Segmentation
+### Phase 1 — Behavioral Segmentation
 
 Users are categorized into:
 
-Genuine Gamers
-Casual Users
-Reward Hunters
+* Genuine Gamers
+* Casual Users
+* Reward Hunters
 
-based on engagement patterns and reward behavior.
+---
 
-Phase 2 — Dependency Estimation
+### Phase 2 — Reward Dependency Scoring
 
-A Reward Dependency Score (0–100) is assigned to each user.
+Each user receives a Reward Dependency Score ranging from:
 
+```text
 0   = Intrinsically Engaged
 100 = Highly Reward Dependent
+```
 
-Phase 3 — Reward Optimization
+---
 
-The system evaluates:
+### Phase 3 — Incentive Optimization
 
-Current reward amount
-Dependency score
-Simulated retention impact
+The system simulates reward reduction strategies and estimates their impact on:
 
-and recommends:
+* Retention
+* Revenue
+* Profitability
+* Incentive Efficiency
 
-KEEP
-REDUCE 20%
-REDUCE 40%
+---
 
-Metrics
-Financial Metrics
-Total Reward Spend
+## 📈 Dashboard Features
 
-Amount paid to users.
+* Executive KPI Overview
+* Reward Spend Optimization Analysis
+* Dependency Score Distribution
+* Savings by Acquisition Source
+* User-Level Optimization Recommendations
+* Interactive Filtering by:
 
-Suggested Reward Spend
+  * Country
+  * Device
+  * Acquisition Source
+  * User Segment
 
-Estimated spend after optimization.
+---
 
-Estimated Savings
+## 🛠 Tech Stack
 
-Potential reduction in reward payouts.
+**Data Science**
 
-Savings Percentage
+* Python
+* Pandas
+* NumPy
+* Scikit-Learn
 
-Percentage reduction in total reward spend.
+**Visualization**
 
-User Metrics
-Retention Rate
+* Plotly
+* Streamlit
 
-Percentage of users retained.
+**Development**
 
-Reward Dependency Score
+* Git
+* GitHub
 
-Average dependency score across users.
+---
 
-High Dependency User Share
+## 🔮 Future Enhancements
 
-Percentage of users classified as reward-dependent.
+* Uplift Modelling
+* Causal Inference Framework
+* Reinforcement Learning-Based Reward Allocation
+* Real-Time Incentive Optimization
+* Advertiser-Specific Reward Strategies
+* Automated Experiment Generation
 
-Business Metrics
-Profit
+---
 
-Advertiser Revenue − Reward Cost
+## Key Takeaway
 
-Return on Incentive Spend (ROIS)
-ROIS = Revenue Generated / Reward Cost
-Cost per Retained User
-Reward Spend / Retained Users
-Initial Findings
+This project demonstrates how AI-driven incentive optimization can reduce reward spending by **14%+** while maintaining a structured, data-driven approach to retention management.
 
-Using the synthetic dataset:
+The broader objective is to help rewarded user acquisition platforms maximize profitability without blindly reducing incentives.
 
-Total Users: 100,000
+---
 
-Current Reward Spend: €1.11M
+### Author
 
-Total Profit: €81K
+Sourav Gupta
 
-High Dependency Users: 24,405
-
-Potential Reward Waste: €512K
-
-These findings suggest significant opportunity for reward optimization through dependency-aware incentive allocation.
-
-Future Improvements
-Uplift Modelling
-Causal Inference Framework
-Real-Time Reward Optimization
-Reinforcement Learning Based Incentive Allocation
-Advertiser-Specific Reward Strategies
-Dynamic Experiment Generation
-A/B Testing Recommendation Engine
-Key Question
-
-How much reward spend can be reduced while maintaining user retention and advertiser value?
-
-This project aims to provide a data-driven answer to that question. -->
-
-Reward Optimizer Summary
-
-Current Reward Spend: €1,114,378.71
-Suggested Reward Spend: €957,817.87
-Estimated Savings: €156,560.84
-Savings Percentage: 14.05%
-
-Recommendation Breakdown:
-REDUCE_40: 39,645 users
-REDUCE_20: 35,132 users
-KEEP: 25,223 users
+Data Science | AI | Business Analytics | Product Thinking
