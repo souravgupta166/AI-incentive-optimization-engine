@@ -133,4 +133,4 @@ Static incentive structures leave significant margin on the table. By scoring re
 **Sourav Gupta**  
 Data Science · AI · Business Analytics · Product Thinking
 
-[LinkedIn](#) · [GitHub](#)
+[LinkedIn](https://www.linkedin.com/in/sourav-gupta-7539a9217/) · [GitHub](https://github.com/souravgupta166)
